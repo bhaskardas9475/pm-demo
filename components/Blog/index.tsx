@@ -27,12 +27,15 @@ const Blog = () => {
           ))} */}
 
           <div className="animate_top rounded-lg bg-white p-4 pb-9 shadow-solid-8 dark:bg-blacksection">
+            {/* @ts-ignore */}
             <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7240310213226983424" height="573" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
           </div>
           <div className="animate_top rounded-lg bg-white p-4 pb-9 shadow-solid-8 dark:bg-blacksection">
+            {/* @ts-ignore */}
             <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7242438195726934016" height="573" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
           </div>
           <div className="animate_top rounded-lg bg-white p-4 pb-9 shadow-solid-8 dark:bg-blacksection">
+            {/* @ts-ignore */}
             <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7246746661127929856" height="573" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
           </div>
         </div>
