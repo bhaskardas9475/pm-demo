@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import FAQItem from "./FAQItem";
 import faqData from "./faqData";
+import Link from "next/link";
 
 const FAQ = () => {
   const [activeFaq, setActiveFaq] = useState(1);
@@ -60,8 +61,8 @@ const FAQ = () => {
                 </span>
               </h2>
 
-              <a
-                href="#"
+              <Link
+                href="/contact"
                 className="group mt-7.5 inline-flex items-center gap-2.5 text-black hover:text-primary dark:text-white dark:hover:text-primary"
               >
                 <span className="duration-300 group-hover:pr-2">Know More</span>
@@ -76,7 +77,7 @@ const FAQ = () => {
                     fill="currentColor"
                   />
                 </svg>
-              </a>
+              </Link>
             </motion.div>
 
             <motion.div

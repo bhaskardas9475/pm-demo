@@ -19,6 +19,8 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`dark:bg-black ${inter.className}`}>
+        <div id="fb-root"></div>
+        <script async defer src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v21.0"></script>
         <ThemeProvider
           enableSystem={false}
           attribute="class"

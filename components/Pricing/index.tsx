@@ -146,9 +146,9 @@ const Pricing = () => {
                 </span>
               </h3>
               <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
-                Large Pack
+                New Launch
               </h4>
-              <p>Lorem ipsum dolor sit amet, consec adipisicing elit.</p>
+              <p>Exclusive new launch: modern design, prime location, luxury amenities, and unmatched comfort—perfect for contemporary living."</p>
 
               <div className="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
                 <ul>

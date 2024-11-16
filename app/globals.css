@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 /* third-party libraries CSS */
+.bg-primary {
+  background-color: #ef4f23;
+}
+:root {
+  --swiper-theme-color: #ef4f23 !important;
+}
 
 .testimonial-01 .swiper-pagination-bullet {
   @apply h-2.5 w-2.5 bg-stroke opacity-100;

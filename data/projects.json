@@ -1,0 +1,65 @@
+{
+    "Bangalore": {
+        "entries": [
+            [
+                "Prestige Pine Forest ",
+                "Sumadhura Capitol ",
+                "Vaswani Starlight ",
+                "Sumadhura Capitol / Vaswani Starlight ",
+                "Prestige Pine Forest / Prestige Raintreek Park ",
+                "Prestige White Meadows / Prestige Raintreek Park "
+            ],
+            [
+                "Prestige Raintreek Park / Prestige Pine Forest ",
+                "Prestige Somerville / Prestige Raintreek Park ",
+                "Prestige Raintreek Park / Prestige Somerville ",
+                "Nambiar / Godrej Park Retreat ",
+                "Godrej Park Retreat / Nambiar ",
+                "Braigade Valencia / Raj High Gardens "
+            ],
+            [
+                "Brigade Valencia / SNN Raj High Gardens ",
+                "Prestige Southern Star ",
+                "Prestige Kings County / Pride Plots ",
+                "Kalyani Arcadia ",
+                "Tata Carnatica / Kalyani Arcadia ",
+                "Tata Carnatica / Kalyani Arcadia"
+            ]
+        ]
+    },
+    "Hyderabad": {
+        "entries": [
+            [
+                "The Prestige City ",
+                "Vaishnaoi Southwoods Villas or Nearby Projects ",
+                "Prestige Clairmont or Nearby Projects "
+            ],
+            [
+                "Asbl Loft or Nearby Projects ",
+                "Sattva Lake Ridge or Nearby Projects ",
+                "The Pearl by Auto Realty or Nearby Projects "
+            ],
+            [
+                "Prestige Rainbow Waters or Nearby Projects"
+            ]
+        ]
+    },
+    "Noida": {
+        "entries": [
+            [
+                "Apex Quebec ",
+                "Apex D Rio ",
+                "T and T The Blue "
+            ],
+            [
+                "T and T Digitown ",
+                "T and T Eutopia ",
+                "AU The Sunflower "
+            ],
+            [
+                "Saya Gold Homes ",
+                "Prateek Grand City"
+            ]
+        ]
+    }
+}

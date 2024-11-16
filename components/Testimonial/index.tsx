@@ -14,15 +14,15 @@ import { testimonialData } from "./testimonialData";
 const Testimonial = () => {
   return (
     <>
-      <section>
+      <section id="testimonials">
         <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
           {/* <!-- Section Title Start --> */}
           <div className="animate_top mx-auto text-center">
             <SectionHeader
               headerInfo={{
-                title: `TESTIMONIALS`,
-                subtitle: `Client’s Testimonials`,
-                description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.`,
+                title: `REVIEWS AND RATINGS`,
+                subtitle: `Received from Google Reviews and Ratings `,
+                description: `Our real estate services are trusted by clients for exceptional quality, reliability, and customer satisfaction, as reflected in our glowing reviews and high ratings.`,
               }}
             />
           </div>

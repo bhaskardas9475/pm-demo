@@ -23,16 +23,16 @@ export default function Home() {
   return (
     <main>
       <Hero />
+      <FeaturesTab />
+      {/* <Pricing /> */}
       <Brands />
       <Feature />
       <About />
-      <FeaturesTab />
       <FunFact />
       <Integration />
       <CTA />
       <FAQ />
       <Testimonial />
-      <Pricing />
       <Contact />
       <Blog />
     </main>

@@ -1,5 +1,6 @@
 import { Testimonial } from "@/types/testimonial";
 import Image from "next/image";
+import star from "@/public/images/icon/star-rating.svg";
 
 const SingleTestimonial = ({ review }: { review: Testimonial }) => {
   const { name, designation, image, content } = review;
@@ -11,6 +12,10 @@ const SingleTestimonial = ({ review }: { review: Testimonial }) => {
             {name}
           </h3>
           <p>{designation}</p>
+          <div>
+        <Image width={80} height={50} className="" src={star} alt={name} />
+
+          </div>
         </div>
         <Image width={60} height={50} className="" src={image} alt={name} />
       </div>

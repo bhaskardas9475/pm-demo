@@ -3,8 +3,7 @@ import Image from "next/image";
 import { Brand } from "@/types/brand";
 import { motion } from "framer-motion";
 
-const SingleBrand = ({ brand }: { brand: Brand }) => {
-  const { image, href, name, imageLight, id } = brand;
+const SingleBrand = ({ brand }) => {
 
   return (
     <>
@@ -22,21 +21,14 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
         }}
         initial="hidden"
         whileInView="visible"
-        transition={{ duration: 1, delay: id }}
+        transition={{ duration: 1, delay: brand }}
         viewport={{ once: true }}
-        href={href}
-        className="animate_top mx-w-full relative block h-10 w-[98px]"
+        className="animate_top mx-w-full relative block h-20 w-[98px]"
       >
         <Image
-          className="opacity-65 transition-all duration-300 hover:opacity-100 dark:hidden"
-          src={image}
-          alt={name}
-          fill
-        />
-        <Image
-          className="hidden opacity-50 transition-all duration-300 hover:opacity-100 dark:block"
-          src={imageLight}
-          alt={name}
+          className="transition-all duration-300 hover:opacity-80 dark:hidden"
+          src={`/images/partners/${brand}.jpeg`}
+          alt={''}
           fill
         />
       </motion.a>

@@ -2,6 +2,12 @@
 import Image from "next/image";
 import { useState } from "react";
 
+import { Autoplay, Navigation, Pagination } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Swiper, SwiperSlide } from "swiper/react";
+
 const Hero = () => {
   const [email, setEmail] = useState("");
 
@@ -9,29 +15,34 @@ const Hero = () => {
     e.preventDefault();
   };
 
+  const heroImages = [
+    '/images/hero/hero-1.webp',
+    '/images/hero/hero-2.webp',
+    '/images/hero/hero-3.webp',
+  ]
+
   return (
     <>
       <section className="overflow-hidden pb-20 pt-35 md:pt-40 xl:pb-25 xl:pt-46">
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
           <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
             <div className=" md:w-1/2">
-              <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
-                🔥 Solid - A Complete SaaS Web Template
-              </h4>
+
               <h1 className="mb-5 pr-16 text-3xl font-bold text-black dark:text-white xl:text-hero ">
-                Free Next.js Template for {"   "}
-                <span className="relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg dark:before:bg-titlebgdark ">
-                  SaaS
-                </span>
+
+                Property Matrimony
               </h1>
+              <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
+                Premier real estate platform
+              </h4>
               <p>
-                Solid Pro - Packed with all the key integrations you need for
-                swift SaaS startup launch, including - Auth, Database, Sanity
-                Blog, Essential Components, Pages and More. Built-winth -
-                Next.js 13, React 18 and TypeScript.
+                We specialize in offering a wide range of premium plots, villas, and apartments, tailored to meet the diverse needs of our discerning clients.
+              </p> <br />
+              <p>
+                Our mission is to make the property buying process the safest, most transparent, and memorable experience for every customer.
               </p>
 
-              <div className="mt-10">
+              <div className="mt-10 hidden">
                 <form onSubmit={handleSubmit}>
                   <div className="flex flex-wrap gap-5">
                     <input
@@ -79,20 +90,31 @@ const Hero = () => {
                   height={21.66}
                   className="absolute -right-6.5 bottom-0 z-1"
                 />
-                <div className=" relative aspect-[700/444] w-full">
-                  <Image
-                    className="shadow-solid-l dark:hidden"
-                    src="/images/hero/hero-light.svg"
-                    alt="Hero"
-                    fill
-                  />
-                  <Image
-                    className="hidden shadow-solid-l dark:block"
-                    src="/images/hero/hero-dark.svg"
-                    alt="Hero"
-                    fill
-                  />
-                </div>
+                <Swiper
+                  className=" relative aspect-[700/350] w-full shadow-md rounded-[10px]"
+                  spaceBetween={0}
+                  slidesPerView={1}
+                  navigation
+                  autoplay={{
+                    delay: 2000,
+                    disableOnInteraction: false,
+                  }}
+                  pagination={{
+                    clickable: true,
+                  }}
+                  modules={[Autoplay, Pagination, Navigation]}
+                >
+                  {heroImages.map(image => (
+                    <SwiperSlide className="w-100" >
+                      <Image
+                        className="shadow-solid-l"
+                        src={image}
+                        alt="Hero"
+                        fill
+                      />
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
               </div>
             </div>
           </div>

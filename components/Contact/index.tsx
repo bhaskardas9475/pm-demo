@@ -20,7 +20,7 @@ const Contact = () => {
     <>
       {/* <!-- ===== Contact Start ===== --> */}
       <section id="support" className="px-4 md:px-8 2xl:px-0">
-        <div className="relative mx-auto max-w-c-1390 px-7.5 pt-10 lg:px-15 lg:pt-15 xl:px-20 xl:pt-20">
+        <div className="relative mx-auto max-w-c-1390 px-7.5 pt-10 lg:pt-15 xl:pt-20">
           <div className="absolute left-0 top-0 -z-1 h-2/3 w-full rounded-lg bg-gradient-to-t from-transparent to-[#dee7ff47] dark:bg-gradient-to-t dark:to-[#252A42]"></div>
           <div className="absolute bottom-[-255px] left-0 -z-1 h-full w-full">
             <Image
@@ -37,7 +37,7 @@ const Contact = () => {
             />
           </div>
 
-          <div className="flex flex-col-reverse flex-wrap gap-8 md:flex-row md:flex-nowrap md:justify-between xl:gap-20">
+          <div className="flex flex-col-reverse flex-wrap gap-8 md:flex-row md:flex-nowrap md:justify-between xl:gap-10">
             <motion.div
               variants={{
                 hidden: {
@@ -172,32 +172,53 @@ const Contact = () => {
               whileInView="visible"
               transition={{ duration: 2, delay: 0.1 }}
               viewport={{ once: true }}
-              className="animate_top w-full md:w-2/5 md:p-7.5 lg:w-[26%] xl:pt-15"
+              className="animate_top w-full md:w-2/5 md:p-7.5 lg:w-[50%] xl:pt-15"
             >
-              <h2 className="mb-12.5 text-3xl font-semibold text-black dark:text-white xl:text-sectiontitle2">
+              <h2 className="mb-2 text-3xl font-semibold text-black dark:text-white xl:text-sectiontitle2">
                 Find us
               </h2>
 
-              <div className="5 mb-7">
-                <h3 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
-                  Our Loaction
+              <div className="">
+                <h3 className="mb-2 text-metatitle3 font-medium text-black dark:text-white">
+                  Bangalore:
                 </h3>
-                <p>290 Maryam Springs 260, Courbevoie, Paris, France</p>
-              </div>
-              <div className="5 mb-7">
-                <h3 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
-                  Email Address
+                <p className="mb-2 text-sm">
+                  PROPERTY MATRIMONY
+                  Evolve Work Studio, 3rd Floor, EPIP Zone,
+                  Behind RxDx Hospital, Whitefield,
+                  Bangalore - 560048, Karnataka <br />
+                  Contact No: <a className="text-blue-600" href="tel:+919663513061">+91-9663513061</a>  <br />
+                  Email: <a className="text-blue-600" href="mailto:info@propertymatrimony.com">info@propertymatrimony.com</a> 
+                </p>
+                <h3 className="mb-2 text-metatitle3 font-medium text-black dark:text-white">
+                  Noida:
                 </h3>
-                <p>
-                  <a href="#">yourmail@domainname.com</a>
+                <p className="mb-2 text-sm">
+                  PROPERTY MATRIMONY
+                  Office # 710, 7th Floor, Tower B,
+                  KLJ Noida One, Block B, Sector 62,
+                  Noida - 201309, Uttar Pradesh <br />
+                  Contact No:  <a className="text-blue-600" href="tel:+918904435307">+91-8904435307</a> <br />
+                  Email: <a className="text-blue-600" href="mailto:info@propertymatrimony.com">info@propertymatrimony.com</a> 
+                </p>
+                <h3 className="mb-2 text-metatitle3 font-medium text-black dark:text-white">
+                  Hyderabad:
+                </h3>
+                <p className="mb-2 text-sm">
+                  PROPERTY MATRIMONY
+                  Provident Kenworth, Bhavani Colony,
+                  Shivarampally Jagir, Premavathipet,
+                  Hyderabad - 500030, Telangana <br />
+                  Contact No: <a className="text-blue-600" href="tel:+918861423836">+91-8861423836</a> <br />
+                  Email: <a className="text-blue-600" href="mailto:info@propertymatrimony.com">info@propertymatrimony.com</a> 
                 </p>
               </div>
-              <div>
-                <h4 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
-                  Phone Number
-                </h4>
-                <p>
-                  <a href="#">+009 42334 6343 843</a>
+              <div className="5 mb-7">
+                <h3 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
+                  Coming Soon @
+                </h3>
+                <p className="text-sm">
+                  Goa | Pune | Gurugram
                 </p>
               </div>
             </motion.div>
