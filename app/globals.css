@@ -6,6 +6,9 @@
 .bg-primary {
   background-color: #ef4f23;
 }
+.text-primary {
+  color: #ef4f23;
+}
 :root {
   --swiper-theme-color: #ef4f23 !important;
 }

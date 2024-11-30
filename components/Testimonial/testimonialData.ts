@@ -35,4 +35,52 @@ export const testimonialData: Testimonial[] = [
     content:
       "Excellent , already have done two booking appartment as per commitment . Because of here had full fill every expectation regarding living , rental income and selling purpose - everywhere you have got of profits & satisfaction .",
   },
+  {
+    id: 5,
+    name: "Narayana Sastry",
+    designation: "Google Review",
+    image: image2,
+    content:
+      "We have been in touch with Sanjeet from last 3-years. He is very approachable and understands our requirements and helps in resolving issues.",
+  },
+  {
+    id: 6,
+    name: "Vivek Mittal",
+    designation: "Google Review",
+    image: image2,
+    content:
+      "Very nice experience working with Vivek Sharma. His on ground presence definitely helped during property booking.",
+  },
+  {
+    id: 7,
+    name: "AnkitJ Jain",
+    designation: "Google Review",
+    image: image2,
+    content:
+      "Thanks to Vivek who has helped us in getting the preferred unit of ours in Prestige city. He is an excellent professional who understand client needs & goes ways beyond to fulfil it... I have booked couple of properties through Property matrimony hassle free.",
+  },
+  {
+    id: 8,
+    name: "Misbahuddin Khaja",
+    designation: "Google Review",
+    image: image2,
+    content:
+      "I recently had an experience of booking a flat with this agency and the experience was very smooth and efficient. The sales executive Mr.Shahid was very dedicated and professional in his approach. He listened patiently to all my requirements, gave suggestions where it would be beneficial to me and finally helped me secure the booking.",
+  },
+  {
+    id: 9,
+    name: "Rahul Yogi",
+    designation: "Google Review",
+    image: image2,
+    content:
+      "I had a great experience while purchasing my flat in prestige City...Sanjeet is having good experience and knowledge about property deal.He is good in behaviour and friendly in nature. He is a good asset. You can trust him.",
+  },
+  {
+    id: 10,
+    name: "Tilak Bisht",
+    designation: "Google Review",
+    image: image2,
+    content:
+      "Had good experience with Shahid. Initially we booked a 2bhk after looking at the proposed prices but later we wanted to shift to 3bhk. And Shahid helped us get one with the configurations and directions we wanted. He has done good job and showed us the expected property and help us find our dream home.",
+  },
 ];

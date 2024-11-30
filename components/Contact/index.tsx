@@ -16,6 +16,8 @@ const Contact = () => {
     return null;
   }
 
+  const iconSize = 30;
+
   return (
     <>
       {/* <!-- ===== Contact Start ===== --> */}
@@ -57,7 +59,7 @@ const Contact = () => {
               className="animate_top w-full rounded-lg bg-white p-7.5 shadow-solid-8 dark:border dark:border-strokedark dark:bg-black md:w-3/5 lg:w-3/4 xl:p-15"
             >
               <h2 className="mb-15 text-3xl font-semibold text-black dark:text-white xl:text-sectiontitle2">
-                Send a message
+                Contact Us
               </h2>
 
               <form
@@ -78,17 +80,12 @@ const Contact = () => {
                   />
                 </div>
 
-                <div className="mb-12.5 flex flex-col gap-7.5 lg:flex-row lg:justify-between lg:gap-14">
-                  <input
-                    type="text"
-                    placeholder="Subject"
-                    className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
-                  />
-
+                <div className="mb-11.5 flex">
+                 
                   <input
                     type="text"
                     placeholder="Phone number"
-                    className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
+                    className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white"
                   />
                 </div>
 
@@ -179,9 +176,12 @@ const Contact = () => {
               </h2>
 
               <div className="">
-                <h3 className="mb-2 text-metatitle3 font-medium text-black dark:text-white">
-                  Bangalore:
-                </h3>
+                <div className="flex content-centre mb-2 gap-2.5 items-center">
+                  <Image src={"/images/icon/OneBangalore.png"} alt={"Bangalore"} height={iconSize} width={iconSize} />
+                  <h3 className="text-metatitle3 font-medium text-black dark:text-white">
+                    Bangalore:
+                  </h3>
+                </div>
                 <p className="mb-2 text-sm">
                   PROPERTY MATRIMONY
                   Evolve Work Studio, 3rd Floor, EPIP Zone,
@@ -190,9 +190,12 @@ const Contact = () => {
                   Contact No: <a className="text-blue-600" href="tel:+919663513061">+91-9663513061</a>  <br />
                   Email: <a className="text-blue-600" href="mailto:info@propertymatrimony.com">info@propertymatrimony.com</a> 
                 </p>
-                <h3 className="mb-2 text-metatitle3 font-medium text-black dark:text-white">
+                <div className="flex content-centre mb-2 gap-2.5 items-center">
+                  <Image src={"/images/icon/onedelhi.png"} alt={"Bangalore"} height={iconSize} width={iconSize} />
+                  <h3 className="text-metatitle3 font-medium text-black dark:text-white">
                   Noida:
-                </h3>
+                  </h3>
+                </div>
                 <p className="mb-2 text-sm">
                   PROPERTY MATRIMONY
                   Office # 710, 7th Floor, Tower B,
@@ -201,9 +204,12 @@ const Contact = () => {
                   Contact No:  <a className="text-blue-600" href="tel:+918904435307">+91-8904435307</a> <br />
                   Email: <a className="text-blue-600" href="mailto:info@propertymatrimony.com">info@propertymatrimony.com</a> 
                 </p>
-                <h3 className="mb-2 text-metatitle3 font-medium text-black dark:text-white">
+                <div className="flex content-centre mb-2 gap-2.5 items-center">
+                  <Image src={"/images/icon/OneHyderabad.png"} alt={"Bangalore"} height={iconSize} width={iconSize} />
+                  <h3 className="text-metatitle3 font-medium text-black dark:text-white">
                   Hyderabad:
-                </h3>
+                  </h3>
+                </div>
                 <p className="mb-2 text-sm">
                   PROPERTY MATRIMONY
                   Provident Kenworth, Bhavani Colony,

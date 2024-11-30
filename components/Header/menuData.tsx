@@ -21,65 +21,47 @@ const menuData: Menu[] = [
   },
   {
     id: 4,
-    title: "Partners",
+    title: "Blogs",
     newTab: false,
-    path: "/#partners",
-  },
-  {
-    id: 5,
-    title: "Testimonials",
-    newTab: false,
-    path: "/#testimonials",
-  },
-  {
-    id: 5,
-    title: "Locations",
-    newTab: false,
-    path: "/#support",
+    path: "/blog",
   },
   // {
-  //   id: 3,
-  //   title: "Pages",
+  //   id: 5,
+  //   title: "Testimonials",
   //   newTab: false,
-  //   submenu: [
-  //     {
-  //       id: 31,
-  //       title: "Blog Grid",
-  //       newTab: false,
-  //       path: "/blog",
-  //     },
-  //     {
-  //       id: 34,
-  //       title: "Sign In",
-  //       newTab: false,
-  //       path: "/auth/signin",
-  //     },
-  //     {
-  //       id: 35,
-  //       title: "Sign Up",
-  //       newTab: false,
-  //       path: "/auth/signup",
-  //     },
-  //     {
-  //       id: 35,
-  //       title: "Docs",
-  //       newTab: false,
-  //       path: "/docs",
-  //     },
-  //     {
-  //       id: 35.1,
-  //       title: "Support",
-  //       newTab: false,
-  //       path: "/support",
-  //     },
-  //     {
-  //       id: 36,
-  //       title: "404",
-  //       newTab: false,
-  //       path: "/error",
-  //     },
-  //   ],
+  //   path: "/#testimonials",
   // },
+  // {
+  //   id: 5,
+  //   title: "Locations",
+  //   newTab: false,
+  //   path: "/#support",
+  // },
+  {
+    id: 3,
+    title: "Projects",
+    newTab: false,
+    submenu: [
+      {
+        id: 31,
+        title: "Bangalore",
+        newTab: false,
+        path: "/projects/bangalore",
+      },
+      {
+        id: 34,
+        title: "Hyderabad",
+        newTab: false,
+        path: "/projects/hyderabad",
+      },
+      {
+        id: 35,
+        title: "Noida",
+        newTab: false,
+        path: "/projects/noida",
+      },
+    ],
+  },
 
   {
     id: 4,

@@ -2,12 +2,6 @@
 import Image from "next/image";
 import { useState } from "react";
 
-import { Autoplay, Navigation, Pagination } from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { Swiper, SwiperSlide } from "swiper/react";
-
 const Hero = () => {
   const [email, setEmail] = useState("");
 
@@ -15,15 +9,9 @@ const Hero = () => {
     e.preventDefault();
   };
 
-  const heroImages = [
-    '/images/hero/hero-1.webp',
-    '/images/hero/hero-2.webp',
-    '/images/hero/hero-3.webp',
-  ]
-
   return (
     <>
-      <section className="overflow-hidden pb-20 pt-35 md:pt-40 xl:pb-25 xl:pt-46">
+      <section className="overflow-hidden pb-20 pt-20">
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
           <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
             <div className=" md:w-1/2">
@@ -33,10 +21,10 @@ const Hero = () => {
                 Property Matrimony
               </h1>
               <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
-                Premier real estate platform
+              Premium real estate platform
               </h4>
               <p>
-                We specialize in offering a wide range of premium plots, villas, and apartments, tailored to meet the diverse needs of our discerning clients.
+              We specialize in offering a wide range of premium apartments, villas, and plots, tailored to meet the diverse needs of our discerning clients.
               </p> <br />
               <p>
                 Our mission is to make the property buying process the safest, most transparent, and memorable experience for every customer.
@@ -90,31 +78,14 @@ const Hero = () => {
                   height={21.66}
                   className="absolute -right-6.5 bottom-0 z-1"
                 />
-                <Swiper
-                  className=" relative aspect-[700/350] w-full shadow-md rounded-[10px]"
-                  spaceBetween={0}
-                  slidesPerView={1}
-                  navigation
-                  autoplay={{
-                    delay: 2000,
-                    disableOnInteraction: false,
-                  }}
-                  pagination={{
-                    clickable: true,
-                  }}
-                  modules={[Autoplay, Pagination, Navigation]}
-                >
-                  {heroImages.map(image => (
-                    <SwiperSlide className="w-100" >
-                      <Image
-                        className="shadow-solid-l"
-                        src={image}
-                        alt="Hero"
-                        fill
-                      />
-                    </SwiperSlide>
-                  ))}
-                </Swiper>
+                <div className=" relative aspect-[700/444] w-full">
+                  <Image
+                    className="shadow-solid-l"
+                    src="/images/hero/Designer-1.jpeg"
+                    alt="Hero"
+                    fill
+                  />
+                </div>
               </div>
             </div>
           </div>

@@ -8,7 +8,8 @@ const FunFact = () => {
     <>
       {/* <!-- ===== Funfact Start ===== --> */}
       <section className="px-4 py-20 md:px-8 lg:py-22.5 2xl:px-0">
-        <div className="relative z-1 mx-auto max-w-c-1390 rounded-lg bg-gradient-to-t from-[#F8F9FF] to-[#DEE7FF] py-22.5 dark:bg-blacksection dark:bg-gradient-to-t dark:from-transparent dark:to-transparent dark:stroke-strokedark xl:py-27.5">
+        <div className="relative z-1 mx-auto max-w-c-1390 rounded-lg bg-gradient-to-t from-[#F8F9FF] to-[#c518164d] py-22.5 dark:bg-blacksection dark:bg-gradient-to-t dark:from-transparent dark:to-transparent dark:stroke-strokedark xl:py-27.5">
+         
           <Image
             width={335}
             height={384}
@@ -36,6 +37,7 @@ const FunFact = () => {
             alt="Dotted"
             className="absolute left-0 top-0 -z-1 hidden dark:block"
           />
+          
 
           <motion.div
             variants={{
@@ -83,7 +85,7 @@ const FunFact = () => {
               className="animate_top text-center"
             >
               <h3 className="mb-2.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                5000
+                5000+
               </h3>
               <p className="text-lg lg:text-para2">Satisfied Customers</p>
             </motion.div>
@@ -106,7 +108,7 @@ const FunFact = () => {
               className="animate_top text-center"
             >
               <h3 className="mb-2.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                20
+                14+
               </h3>
               <p className="text-lg lg:text-para2">Years Since</p>
             </motion.div>
@@ -129,11 +131,18 @@ const FunFact = () => {
               className="animate_top text-center"
             >
               <h3 className="mb-2.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                120
+                3CR
               </h3>
-              <p className="text-lg lg:text-para2">Winning Award</p>
+              <p className="text-lg lg:text-para2">Turnover</p>
             </motion.div>
           </div>
+
+          <Image
+            fill
+            src="/images/features/feature-4.jpg"
+            alt="Man"
+            className="absolute opacity-25 -z-10 rounded-lg blur-sm brightness-70"
+          />
         </div>
       </section>
       {/* <!-- ===== Funfact End ===== --> */}

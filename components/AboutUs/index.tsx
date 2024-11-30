@@ -36,7 +36,7 @@ const AboutUs = () => {
                 </span>
               </h2>
               <p className="mb-4 text-black last:mb-0 dark:text-manatee">
-                At Property Matrimony, we are dedicated to transforming the real estate experience for our clients As a premier real estate platform, we specialize in offering a wide range of premium plots, villas, and apartments, tailored to meet the diverse needs of our discerning clientele. Backed by a committed team of professionals, we leverage advanced technology and comprehensive market insights to guide our clients through every step of their property journey—from the initial search to the final possession.
+              At Property Matrimony, we are dedicated to transforming the real estate experience for our clients As a premier real estate platform, we specialize in offering a wide range of premium apartments, villas, and plots, tailored to meet the diverse needs of our discerning clientele. Backed by a committed team of professionals, we leverage advanced technology and comprehensive market insights to guide our clients through every step of their property journey—from the initial search to the final possession. 
               </p>
               <p className="mb-4 text-black last:mb-0 dark:text-manatee">
                 Our approach is rooted in trust, transparency, and a deep understanding of the market, ensuring that every client secures not just a property, but their best investment.
@@ -64,18 +64,7 @@ const AboutUs = () => {
               viewport={{ once: true }}
               className="animate_right relative mx-auto hidden aspect-[588/526.5] md:block md:w-1/2"
             >
-              <Image
-                src="./images/about/about-light-02.svg"
-                alt="About"
-                className="dark:hidden"
-                fill
-              />
-              <Image
-                src="./images/about/about-dark-02.svg"
-                alt="About"
-                className="hidden dark:block"
-                fill
-              />
+              <Image src="/images/features/feature-9.jpg" alt="About" fill className="rounded-lg border-[10px] border-double border-red-400" />
             </motion.div>
           </div>
         </div>

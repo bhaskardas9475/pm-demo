@@ -7,7 +7,10 @@ const About = () => {
   return (
     <>
       {/* <!-- ===== About Start ===== --> */}
-      <section id="services" className="overflow-hidden pb-20 lg:pb-25 xl:pb-30">
+      <section
+        id="services"
+        className="overflow-hidden pb-20 lg:pb-25 xl:pb-30"
+      >
         <div className="mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0">
           <div className="flex items-center gap-8 lg:gap-32.5">
             <motion.div
@@ -28,11 +31,7 @@ const About = () => {
               viewport={{ once: true }}
               className="animate_left relative mx-auto hidden aspect-[588/526.5] md:block md:w-1/2"
             >
-              <Image
-                src="/images/features/feature-1.png"
-                alt="About"
-                fill
-              />
+              <Image src="/images/features/feature-9.jpg" alt="About" fill className="rounded-lg border-[10px] border-double border-red-400" />
             </motion.div>
             <motion.div
               variants={{
@@ -65,7 +64,9 @@ const About = () => {
                 </span>
               </h2>
               <p>
-                Real estate investment consulting, Expert knowledge, tailored strategies, and proven methods to maximize ROI and secure profitable assets.
+                Real estate investment consulting, Expert knowledge, tailored
+                strategies, and proven methods to maximize ROI and secure
+                profitable assets.
               </p>
 
               <div className="mt-7.5 flex items-center gap-5">
@@ -78,7 +79,10 @@ const About = () => {
                   <h3 className="mb-0.5 text-metatitle2 text-black dark:text-white">
                     Expert Knowledge:
                   </h3>
-                  <p>Access to market expertise and industry insights saves time and helps avoid costly mistakes. </p>
+                  <p>
+                    Access to market expertise and industry insights saves time
+                    and helps avoid costly mistakes.{" "}
+                  </p>
                 </div>
               </div>
               <div className="mt-7.5 flex items-center gap-5">
@@ -91,7 +95,10 @@ const About = () => {
                   <h3 className="mb-0.5 text-metatitle2 text-black dark:text-white">
                     Custom Strategies
                   </h3>
-                  <p>Tailored strategies align with personal goals, risk tolerance, and financial capacity. </p>
+                  <p>
+                    Tailored strategies align with personal goals, risk
+                    tolerance, and financial capacity.{" "}
+                  </p>
                 </div>
               </div>
               <div className="mt-7.5 flex items-center gap-5">
@@ -104,7 +111,10 @@ const About = () => {
                   <h3 className="mb-0.5 text-metatitle2 text-black dark:text-white">
                     Maximized ROI
                   </h3>
-                  <p>Consultants work to optimize profitability and minimize risks, from purchase to sale.</p>
+                  <p>
+                    Consultants work to optimize profitability and minimize
+                    risks, from purchase to sale.
+                  </p>
                 </div>
               </div>
             </motion.div>
@@ -144,12 +154,27 @@ const About = () => {
                   Apartments, Villas, Plots
                 </span>
               </h2>
-              <p><span className="font-bold">Single-Family Homes:</span> Standalone homes designed for one family, offering privacy and often featuring private yards. </p>
-              <p className="mt-4"><span className="font-bold">Multi-Family Homes:</span> Includes duplexes, triplexes, and fourplexes, with multiple units in one building, ideal for rental income or multi-generational families. </p>
-              <p className="mt-4"><span className="font-bold">Condos (Condominiums):</span> Similar to apartments but individually owned units in a shared building, where owners pay maintenance fees for shared amenities.  </p>
-              <p className="mt-4"><span className="font-bold">Townhouses:</span> Multi-story homes sharing one or two walls with neighboring units, with a balance of private ownership and community amenities. </p>
-              <p className="mt-4"><span className="font-bold">Co-ops (Cooperatives):</span> Residents own shares in a corporation rather than owning the property outright, and there’s typically a board that approves new residents.</p>
-             
+              <p>
+                <span className="font-bold">Single-Family Homes:</span>{" "}
+                Standalone homes designed for one family, offering privacy and
+                often featuring private yards.{" "}
+              </p>
+              <p className="mt-4">
+                <span className="font-bold">Multi-Family Homes:</span> Includes
+                duplexes, triplexes, and fourplexes, with multiple units in one
+                building, ideal for rental income or multi-generational
+                families.{" "}
+              </p>
+              <p className="mt-4">
+                <span className="font-bold">Condominiums:</span> Similar to
+                apartments but individually owned units in a shared building,
+                where owners pay maintenance fees for shared amenities.{" "}
+              </p>
+              <p className="mt-4">
+                <span className="font-bold">Townhouses:</span> Multi-story homes
+                sharing one or two walls with neighboring units, with a balance
+                of private ownership and community amenities.{" "}
+              </p>
             </motion.div>
             <motion.div
               variants={{
@@ -170,7 +195,8 @@ const About = () => {
               className="animate_right relative mx-auto hidden aspect-[588/526.5] md:block md:w-1/2"
             >
               <Image
-                src="/images/features/feature-2.png"
+                className="rounded-lg border-[10px] border-double border-red-400"
+                src="/images/features/feature-10.jpg"
                 alt="About"
                 fill
               />
