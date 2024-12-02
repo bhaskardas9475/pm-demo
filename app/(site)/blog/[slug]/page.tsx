@@ -1,19 +1,20 @@
-'use client'
-import Image from "next/image";
-import SharePost from "@/components/Blog/SharePost";
 import RelatedPost from "@/components/Blog/RelatedPost";
 import BlogData from "@/components/Blog/blogData";
-import { useParams } from "next/navigation";
+import Image from "next/image";
 
-const SingleBlogPage = () => {
-  const {slug} = useParams();
+export async function generateStaticParams() {
+  return BlogData.map((blog) => ({
+    slug: blog.slug, // Each object corresponds to a route param
+  }));
+}
 
-  const blog  = BlogData.find(blog => blog.slug == slug);
-  console.log(slug)
+const SingleBlogPage = ({params}) => {
+
+  const blog = BlogData.find(blog => blog.slug == params.slug);
 
   return (
     <>
-      <title>{`Blog Details - Solid`}</title>
+      <title>{`Property Matrimony Blog - ${blog?.title}`}</title>
       <section className="pt-35 lg:pt-45 xl:pt-50 pb-20 lg:pb-25 xl:pb-30">
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
           <div className="flex flex-col-reverse lg:flex-row gap-7.5 xl:gap-12.5">

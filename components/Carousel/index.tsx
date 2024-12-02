@@ -10,14 +10,14 @@ import Link from "next/link";
 
 export default function Carousel() {
   const heroImages = [
-    "/images/hero/banner-1.jpeg",
+    // "/images/hero/banner-1.jpeg",
     "/images/hero/banner-2.jpeg",
   ];
 
   return (
     <section className="overflow-hidden pb-20 pt-35 md:pt-40 xl:pb-25 xl:pt-30">
       <Swiper
-        className=" relative aspect-[700/250] w-full"
+        className=" relative aspect-[700/270] w-full"
         spaceBetween={0}
         slidesPerView={1}
         navigation
