@@ -13,7 +13,7 @@ const BlogPage = async () => {
   return (
     <>
       {/* <!-- ===== Blog Grid Start ===== --> */}
-      <section className="py-20 lg:py-25 xl:py-30">
+      <section className="pb-16 pt-32.5 md:pb-20 md:pt-28 lg:pb-24 lg:pt-32">
         <PageHeader title="Our Blogs" />
         <div className="mx-auto mt-15 max-w-c-1280 px-4 md:px-8 xl:mt-20 xl:px-0">
           <div className="grid grid-cols-1 gap-7.5 md:grid-cols-2 lg:grid-cols-3 xl:gap-10">

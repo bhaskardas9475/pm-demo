@@ -27,6 +27,11 @@ const Header = () => {
     window.addEventListener("scroll", handleStickyMenu);
   });
 
+  useEffect(() => {
+    setNavigationOpen(false)
+    console.log(pathUrl)
+  }, [pathUrl, setDropdownToggler]);
+
   return (
     <header
       className={`fixed left-0 top-0 z-99999 w-full py-7 ${
@@ -41,7 +46,7 @@ const Header = () => {
             <Image
               src="/images/logo/app-logo.png"
               alt="logo"
-              width={200}
+              width={stickyMenu ? 100 : 200}
               height={0}
               className=""
             />

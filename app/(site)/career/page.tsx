@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 const CareerPage = () => {
   return (
-    <div className="py-20 lg:py-25 xl:py-30">
+    <div className="pb-16 pt-32.5 md:pb-20 md:pt-28 lg:pb-24 lg:pt-32">
       <PageHeader title="Career" />
       <Career />
     </div>

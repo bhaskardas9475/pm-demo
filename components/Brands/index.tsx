@@ -1,16 +1,13 @@
 "use client";
-import React from "react";
-import SingleBrand from "./SingleBrand";
-import brandData from "./brandData";
-import SectionHeader from "../Common/SectionHeader";
 import { Autoplay, Navigation, Pagination } from "swiper";
+import SectionHeader from "../Common/SectionHeader";
 
 
+import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Image from "next/image";
 
 const Brands = () => {
   const imageList = [
@@ -50,6 +47,20 @@ const Brands = () => {
             delay: 2000,
           }}
           modules={[Autoplay, Pagination, Navigation]}
+          breakpoints={{
+            320: {
+              slidesPerView: 3,
+              spaceBetween: 30
+            },
+            480: {
+              slidesPerView: 4,
+              spaceBetween: 30
+            },
+            640: {
+              slidesPerView: 6,
+              spaceBetween: 30
+            },
+          }}
         >
           {imageList.map((brand) => (
             <SwiperSlide key={brand} >

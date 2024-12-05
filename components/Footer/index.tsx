@@ -156,7 +156,7 @@ const Footer = () => {
                   whileInView="visible"
                   transition={{ duration: 1, delay: 0.1 }}
                   viewport={{ once: true }}
-                  className="animate_top w-[400px]"
+                  className="animate_top"
                 >
                   {/* <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
                     Social
@@ -167,7 +167,7 @@ const Footer = () => {
                       +91-8904435307
                     </a>
                   </div>
-                  <div className="text-sm">RERA No : PRM/KA/RERA/1251/446/AG/230412/003574</div>
+                  <div className="text-sm">RERA No: PRM/KA/RERA/1251/446/AG/230412/003574</div>
                 </motion.div>
               </div>
             </div>

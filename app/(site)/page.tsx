@@ -26,13 +26,10 @@ export default function Home() {
       <Carousel/>
       <NewLauch/>
       <Hero />
-      {/* <FeaturesTab />̦ */}
-      {/* <Pricing /> */}
       <Brands />
       <Feature />
       <About />
       <FunFact />
-      {/* <Integration /> */}
       <FAQ />
       <CTA />
       <Testimonial />

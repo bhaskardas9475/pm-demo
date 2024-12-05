@@ -8,6 +8,30 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import Link from "next/link";
 
+const ProjectSearch = () => {
+  return (
+    <>
+      <div>
+        <Link
+          href="#new-lauch"
+          className="mr-2 rounded-full bg-red-200 px-5 py-2.5 text-xs font-semibold leading-4 text-red-600 transition-all duration-700 hover:bg-red-100"
+        >
+          Search Properties
+        </Link>
+        <Link
+          href="/contact"
+          className="rounded-full bg-red-200 px-5 py-2.5 text-xs font-semibold leading-4 text-red-600 transition-all duration-700 hover:bg-red-100"
+        >
+          Get a Free Consultation
+        </Link>
+      </div>
+      <div className="mt-5 bg-yellow-300 text-sm text-black text-wrap">
+        RERA No : PRM/KA/RERA/1251/446/AG/230412/003574
+      </div>
+    </>
+  );
+};
+
 export default function Carousel() {
   const heroImages = [
     // "/images/hero/banner-1.jpeg",
@@ -34,27 +58,12 @@ export default function Carousel() {
           <SwiperSlide key={image} className="w-100">
             <div className="">
               <Image className="shadow-solid-l" src={image} alt="Hero" fill />
-              <div className="absolute bottom-8 left-[45%]">
-                <div>
-                  <Link
-                    href="#new-lauch"
-                    className="mr-2 rounded-full bg-red-200 px-5 py-2.5 text-xs font-semibold leading-4 text-red-600 transition-all duration-700 hover:bg-red-100"
-                  >
-                    Search Properties
-                  </Link>
-                  <Link
-                    href="/contact"
-                    className="rounded-full bg-red-200 px-5 py-2.5 text-xs font-semibold leading-4 text-red-600 transition-all duration-700 hover:bg-red-100"
-                  >
-                    Get a Free Consultation
-                  </Link>
-                </div>
-                <div className="text-sm text-black bg-yellow-300 mt-5">RERA No : PRM/KA/RERA/1251/446/AG/230412/003574 </div>
-              </div>
             </div>
+            <div className="sm:block hidden absolute bottom-8 left-[45%]"><ProjectSearch /></div>
           </SwiperSlide>
         ))}
       </Swiper>
+      <div className="xs:d-block sm:hidden mt-4 text-center"><ProjectSearch /></div>
     </section>
   );
 }

@@ -41,7 +41,7 @@ export default function PrivacyPolicyPage() {
     ]
     return (
         <>
-            <section className="pb-16 pt-24 md:pb-20 md:pt-28 lg:pb-24 lg:pt-32">
+            <section className="pb-16 pt-32.5 md:pb-20 md:pt-28 lg:pb-24 lg:pt-32">
                 <PageHeader title="Privacy Policy" />
                 <div className="container mx-auto mt-20 md:px-20">
                     {items.map(item => (
