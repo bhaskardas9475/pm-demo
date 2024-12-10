@@ -12,8 +12,8 @@ const Blog = () => {
           <SectionHeader
             headerInfo={{
               title: `NEWS & BLOGS`,
-              subtitle: `Latest News & Blogs`,
-              description: `Latest news and blogs from Property Matrimony`,
+              subtitle: `Real Estate News & Articles`,
+              description: `Stay Ahead with the Latest Real Estate Trends`,
             }}
           />
         </div>

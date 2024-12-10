@@ -11,6 +11,7 @@
 }
 :root {
   --swiper-theme-color: #ef4f23 !important;
+  --yarl__portal_zindex: 99999;
 }
 
 .testimonial-01 .swiper-pagination-bullet {
@@ -26,6 +27,20 @@
 
 #supportCheckbox:checked ~ div span {
   @apply opacity-100;
+}
+
+@keyframes scalePulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.animated-button {
+  animation: scalePulse 1s infinite;
+  transition: transform 0.3s ease-in-out;
 }
 
 @layer base {
@@ -102,7 +117,7 @@
 
 .blog-details ul,
 .blog-details ol {
-  @apply mb-10 list-inside list-disc text-titlebgdark;
+  @apply mb-10 list-inside text-titlebgdark;
 }
 
 .blog-details li,

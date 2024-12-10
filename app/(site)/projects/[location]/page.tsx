@@ -12,6 +12,8 @@ export async function generateStaticParams() {
 export default function Projects({ params }) {
   const locationProjects = ProjectList.filter(
     (item) => item.city.toLowerCase() === params.location,
+  ).sort(
+    (a, b) => (b.home_screen.localeCompare(a.home_screen)),
   );
 
   return (

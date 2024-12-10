@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { SocialIcon } from "react-social-icons";
 
+const iconSize = 30;
+
 const Footer = () => {
   return (
     <>
@@ -48,22 +50,32 @@ const Footer = () => {
                 </a>
 
                 <p className="mb-10 mt-5">Premier real estate platform</p>
-
-                <p className="mb-1.5 text-sectiontitle uppercase tracking-[5px] text-black">
-                  Head Quarters Bangalore Office
-                </p>
-                <p>
-                  3rd Floor, Evolve Work Studio, SNN Raj Pinnacle, behind RxDx,
-                  EPIP Zone, Whitefield, Bengaluru, Karnataka 560048
-                </p>
-                <p className="my-1.5 text-sectiontitle uppercase tracking-[5px] text-black">
-                  Noida Office:
-                </p>
-                <p>
-                  Office Address: KLJ Noida One B-710, 7th Floor, Tower-B Noida
-                  One, Plot No. 8, Block-B Sector-62, Noida, Uttar Pradesh
-                  201309
-                </p>
+                <ul className="flex items-center gap-5">
+                  <li>
+                    <SocialIcon
+                      url="https://www.facebook.com/propertymatrimony"
+                      target="_blank"
+                    />
+                  </li>
+                  <li>
+                    <SocialIcon
+                      url="https://www.linkedin.com/company/property-matrimony/"
+                      target="_blank"
+                    />
+                  </li>
+                  <li>
+                    <SocialIcon
+                      url="https://www.instagram.com/propertymatrimony2023/"
+                      target="_blank"
+                    />
+                  </li>
+                  <li>
+                    <SocialIcon
+                      url="https://www.youtube.com/@PropertyMatrimony"
+                      target="_blank"
+                    />
+                  </li>
+                </ul>
               </motion.div>
 
               <div className="flex w-full flex-col gap-8 md:flex-row md:justify-between md:gap-0 lg:w-2/3 xl:w-7/12">
@@ -83,7 +95,7 @@ const Footer = () => {
                   whileInView="visible"
                   transition={{ duration: 1, delay: 0.1 }}
                   viewport={{ once: true }}
-                  className="animate_top"
+                  className="animate_top sm:w-1/2"
                 >
                   <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
                     Quick Links
@@ -108,10 +120,10 @@ const Footer = () => {
                     </li>
                     <li>
                       <Link
-                        href="/#projects"
+                        href="/gallery"
                         className="mb-3 inline-block hover:text-primary"
                       >
-                        Projects
+                        Gallery
                       </Link>
                     </li>
                     <li>
@@ -158,16 +170,99 @@ const Footer = () => {
                   viewport={{ once: true }}
                   className="animate_top"
                 >
-                  {/* <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
-                    Social
-                  </h4> */}
-                  <div>
-                    Phone No :{" "}
-                    <a className="text-blue-600" href="tel:+918904435307">
-                      +91-8904435307
-                    </a>
+                  <div className="">
+                    <div className="content-centre mb-2 flex items-center gap-2.5">
+                      <Image
+                        src={"/images/icon/OneBangalore.png"}
+                        alt={"Bangalore"}
+                        height={iconSize}
+                        width={iconSize}
+                      />
+                      <h3 className="text-metatitle3 font-medium text-black dark:text-white">
+                        Bangalore:
+                      </h3>
+                    </div>
+                    <p className="mb-2 text-sm">
+                      Evolve Work Studio, 3rd Floor, EPIP Zone, Behind RxDx
+                      Hospital, Whitefield, Bangalore - 560048, Karnataka <br />
+                      Contact No:{" "}
+                      <a className="text-blue-600" href="tel:+919663513061">
+                        +91-9663513061
+                      </a>{" "}
+                      <br />
+                      Email:{" "}
+                      <a
+                        className="text-blue-600"
+                        href="mailto:info@propertymatrimony.com"
+                      >
+                        info@propertymatrimony.com
+                      </a>{" "}
+                      <br />
+                      RERA: PRM/KA/RERA/1251/446/AG/230412/003574
+                    </p>
+                    <div className="content-centre mb-2 flex items-center gap-2.5">
+                      <Image
+                        src={"/images/icon/onedelhi.png"}
+                        alt={"Bangalore"}
+                        height={iconSize}
+                        width={iconSize}
+                      />
+                      <h3 className="text-metatitle3 font-medium text-black dark:text-white">
+                        Noida:
+                      </h3>
+                    </div>
+                    <p className="mb-2 text-sm">
+                      # 710, 7th Floor, Tower B, KLJ Noida One, Block B,
+                      Sector 62, Noida - 201309, Uttar Pradesh <br />
+                      Contact No:{" "}
+                      <a className="text-blue-600" href="tel:+918904435307">
+                        +91-8904435307
+                      </a>{" "}
+                      <br />
+                      Email:{" "}
+                      <a
+                        className="text-blue-600"
+                        href="mailto:info@propertymatrimony.com"
+                      >
+                        info@propertymatrimony.com
+                      </a>
+                    </p>
+                    <div className="content-centre mb-2 flex items-center gap-2.5">
+                      <Image
+                        src={"/images/icon/OneHyderabad.png"}
+                        alt={"Bangalore"}
+                        height={iconSize}
+                        width={iconSize}
+                      />
+                      <h3 className="text-metatitle3 font-medium text-black dark:text-white">
+                        Hyderabad:
+                      </h3>
+                    </div>
+                    <p className="mb-2 text-sm">
+                      Provident Kenworth, Bhavani Colony, Shivarampally Jagir,
+                      Premavathipet, Hyderabad - 500030, Telangana <br />
+                      Contact No:{" "}
+                      <a className="text-blue-600" href="tel:+918861423836">
+                        +91-8861423836
+                      </a>{" "}
+                      <br />
+                      Email:{" "}
+                      <a
+                        className="text-blue-600"
+                        href="mailto:info@propertymatrimony.com"
+                      >
+                        info@propertymatrimony.com
+                      </a>{" "}
+                      <br />
+                      RERA: A28100003272
+                    </p>
                   </div>
-                  <div className="text-sm">RERA No: PRM/KA/RERA/1251/446/AG/230412/003574</div>
+                  <div className="5 mb-7">
+                    <h3 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
+                      Coming Soon @
+                    </h3>
+                    <p className="text-sm">Goa | Pune | Gurugram</p>
+                  </div>
                 </motion.div>
               </div>
             </div>
@@ -230,52 +325,6 @@ const Footer = () => {
                 &copy; {new Date().getFullYear()} Property Matrimony. All rights
                 reserved
               </p>
-            </motion.div>
-
-            <motion.div
-              variants={{
-                hidden: {
-                  opacity: 0,
-                  y: -20,
-                },
-
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                },
-              }}
-              initial="hidden"
-              whileInView="visible"
-              transition={{ duration: 1, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="animate_top"
-            >
-              <ul className="flex items-center gap-5">
-                <li>
-                  <SocialIcon
-                    url="https://www.facebook.com/propertymatrimony"
-                    target="_blank"
-                  />
-                </li>
-                <li>
-                  <SocialIcon
-                    url="https://www.linkedin.com/company/property-matrimony/"
-                    target="_blank"
-                  />
-                </li>
-                <li>
-                  <SocialIcon
-                    url="https://www.instagram.com/propertymatrimony2023/"
-                    target="_blank"
-                  />
-                </li>
-                <li>
-                  <SocialIcon
-                    url="https://www.youtube.com/@PropertyMatrimony"
-                    target="_blank"
-                  />
-                </li>
-              </ul>
             </motion.div>
           </div>
           {/* <!-- Footer Bottom --> */}

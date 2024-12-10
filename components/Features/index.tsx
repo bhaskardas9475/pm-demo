@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import featuresData from "./featuresData";
 import SingleFeature from "./SingleFeature";
 import SectionHeader from "../Common/SectionHeader";
+import ServiceData from "./ServiceList";
 
 const Feature = () => {
   return (
@@ -14,8 +14,8 @@ const Feature = () => {
           <SectionHeader
             headerInfo={{
               title: "SERVICES OFFERED",
-              subtitle: "Services Offered by us",
-              description: `Expert guidance in buying, selling, and renting properties, market analysis, negotiation, and personalized client support.`,
+              subtitle: "Services offered",
+              description: `Simplifying the way you buy, sell, or rent making real estate personal and easy.`,
             }}
           />
           {/* <!-- Section Title End --> */}
@@ -23,7 +23,7 @@ const Feature = () => {
           <div className="mt-12.5 grid grid-cols-1 gap-7.5 md:grid-cols-2 lg:mt-15 lg:grid-cols-3 xl:mt-20 xl:gap-12.5">
             {/* <!-- Features item Start --> */}
 
-            {featuresData.map((feature, key) => (
+            {ServiceData.map((feature, key) => (
               <SingleFeature feature={feature} key={key} />
             ))}
             {/* <!-- Features item End --> */}

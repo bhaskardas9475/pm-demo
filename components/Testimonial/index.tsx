@@ -14,7 +14,7 @@ import { testimonialData } from "./testimonialData";
 const Testimonial = () => {
   return (
     <>
-      <section id="testimonials">
+      <section id="testimonials" className="pt-20 lg:pt-25 xl:pt-30">
         <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
           {/* <!-- Section Title Start --> */}
           <div className="animate_top mx-auto text-center">
@@ -48,7 +48,7 @@ const Testimonial = () => {
           className="animate_top mx-auto mt-15 max-w-c-1235 px-4 md:px-8 xl:mt-20 xl:px-0"
         >
           {/* <!-- Slider main container --> */}
-          <div className="swiper testimonial-01 mb-20 pb-22.5">
+          <div className="swiper testimonial-01 b-22.5">
             {/* <!-- Additional required wrapper --> */}
             <Swiper
               spaceBetween={50}

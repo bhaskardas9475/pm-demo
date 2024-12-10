@@ -81,7 +81,6 @@ const Contact = () => {
                 </div>
 
                 <div className="mb-11.5 flex">
-                 
                   <input
                     type="text"
                     placeholder="Phone number"
@@ -104,7 +103,7 @@ const Contact = () => {
                       type="checkbox"
                       className="peer sr-only"
                     />
-                    <span className="border-gray-300 bg-gray-100 text-blue-600 dark:border-gray-600 dark:bg-gray-700 group mt-2 flex h-5 min-w-[20px] items-center justify-center rounded peer-checked:bg-primary">
+                    <span className="group mt-2 flex h-5 min-w-[20px] items-center justify-center rounded border-gray-300 bg-gray-100 text-blue-600 peer-checked:bg-primary dark:border-gray-600 dark:bg-gray-700">
                       <svg
                         className="opacity-0 peer-checked:group-[]:opacity-100"
                         width="10"
@@ -151,82 +150,6 @@ const Contact = () => {
                   </button>
                 </div>
               </form>
-            </motion.div>
-
-            <motion.div
-              variants={{
-                hidden: {
-                  opacity: 0,
-                  y: -20,
-                },
-
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                },
-              }}
-              initial="hidden"
-              whileInView="visible"
-              transition={{ duration: 2, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="animate_top w-full md:w-2/5 md:p-7.5 lg:w-[50%] xl:pt-15"
-            >
-              <h2 className="mb-2 text-3xl font-semibold text-black dark:text-white xl:text-sectiontitle2">
-                Find us
-              </h2>
-
-              <div className="">
-                <div className="flex content-centre mb-2 gap-2.5 items-center">
-                  <Image src={"/images/icon/OneBangalore.png"} alt={"Bangalore"} height={iconSize} width={iconSize} />
-                  <h3 className="text-metatitle3 font-medium text-black dark:text-white">
-                    Bangalore:
-                  </h3>
-                </div>
-                <p className="mb-2 text-sm">
-                  PROPERTY MATRIMONY
-                  Evolve Work Studio, 3rd Floor, EPIP Zone,
-                  Behind RxDx Hospital, Whitefield,
-                  Bangalore - 560048, Karnataka <br />
-                  Contact No: <a className="text-blue-600" href="tel:+919663513061">+91-9663513061</a>  <br />
-                  Email: <a className="text-blue-600" href="mailto:info@propertymatrimony.com">info@propertymatrimony.com</a> 
-                </p>
-                <div className="flex content-centre mb-2 gap-2.5 items-center">
-                  <Image src={"/images/icon/onedelhi.png"} alt={"Bangalore"} height={iconSize} width={iconSize} />
-                  <h3 className="text-metatitle3 font-medium text-black dark:text-white">
-                  Noida:
-                  </h3>
-                </div>
-                <p className="mb-2 text-sm">
-                  PROPERTY MATRIMONY
-                  Office # 710, 7th Floor, Tower B,
-                  KLJ Noida One, Block B, Sector 62,
-                  Noida - 201309, Uttar Pradesh <br />
-                  Contact No:  <a className="text-blue-600" href="tel:+918904435307">+91-8904435307</a> <br />
-                  Email: <a className="text-blue-600" href="mailto:info@propertymatrimony.com">info@propertymatrimony.com</a> 
-                </p>
-                <div className="flex content-centre mb-2 gap-2.5 items-center">
-                  <Image src={"/images/icon/OneHyderabad.png"} alt={"Bangalore"} height={iconSize} width={iconSize} />
-                  <h3 className="text-metatitle3 font-medium text-black dark:text-white">
-                  Hyderabad:
-                  </h3>
-                </div>
-                <p className="mb-2 text-sm">
-                  PROPERTY MATRIMONY
-                  Provident Kenworth, Bhavani Colony,
-                  Shivarampally Jagir, Premavathipet,
-                  Hyderabad - 500030, Telangana <br />
-                  Contact No: <a className="text-blue-600" href="tel:+918861423836">+91-8861423836</a> <br />
-                  Email: <a className="text-blue-600" href="mailto:info@propertymatrimony.com">info@propertymatrimony.com</a> 
-                </p>
-              </div>
-              <div className="5 mb-7">
-                <h3 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
-                  Coming Soon @
-                </h3>
-                <p className="text-sm">
-                  Goa | Pune | Gurugram
-                </p>
-              </div>
             </motion.div>
           </div>
         </div>

@@ -25,9 +25,9 @@ const ProjectSearch = () => {
           Get a Free Consultation
         </Link>
       </div>
-      <div className="mt-5 bg-yellow-300 text-sm text-black text-wrap">
+      {/* <div className="mt-5 bg-yellow-300 text-sm text-black text-wrap">
         RERA No : PRM/KA/RERA/1251/446/AG/230412/003574
-      </div>
+      </div> */}
     </>
   );
 };
@@ -35,7 +35,9 @@ const ProjectSearch = () => {
 export default function Carousel() {
   const heroImages = [
     // "/images/hero/banner-1.jpeg",
-    "/images/hero/banner-2.jpeg",
+    "/images/hero/1.jpeg",
+    "/images/hero/2.jpeg",
+    "/images/hero/3.jpeg",
   ];
 
   return (
@@ -46,7 +48,7 @@ export default function Carousel() {
         slidesPerView={1}
         navigation
         autoplay={{
-          delay: 4000,
+          delay: (10 *1000),
           disableOnInteraction: false,
         }}
         pagination={{
@@ -59,11 +61,11 @@ export default function Carousel() {
             <div className="">
               <Image className="shadow-solid-l" src={image} alt="Hero" fill />
             </div>
-            <div className="sm:block hidden absolute bottom-8 left-[45%]"><ProjectSearch /></div>
+            {/* <div className="sm:block hidden absolute bottom-8 left-[45%]"><ProjectSearch /></div> */}
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="xs:d-block sm:hidden mt-4 text-center"><ProjectSearch /></div>
+      {/* <div className="xs:d-block sm:hidden mt-4 text-center"><ProjectSearch /></div> */}
     </section>
   );
 }

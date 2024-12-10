@@ -7,4 +7,5 @@ export type ProjectType = {
     totalLand: string | number
     sizes: string
     image: string
+    home_screen: string
 }

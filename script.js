@@ -1,4 +1,4 @@
-const testFolder = './public/images/projects/Bangalore';
+const testFolder = './public/images/gallery';
 const fs = require('fs');
 
 fs.readdir(testFolder, console.log);
