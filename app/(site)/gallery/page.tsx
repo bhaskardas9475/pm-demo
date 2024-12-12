@@ -1,3 +1,4 @@
+import AnimatedGallery from "@/components/AnimatedGallery";
 import Gallery from "@/components/Gallery";
 import PageHeader from "@/components/PageHeader";
 import { Metadata } from "next";

@@ -21,8 +21,8 @@ const Testimonial = () => {
             <SectionHeader
               headerInfo={{
                 title: `REVIEWS AND RATINGS`,
-                subtitle: `Received from Google Reviews and Ratings `,
-                description: `Our real estate services are trusted by clients for exceptional quality, reliability, and customer satisfaction, as reflected in our glowing reviews and high ratings.`,
+                subtitle: `Reviews and Ratings`,
+                description: `Your words inspire us to do better.`,
               }}
             />
           </div>

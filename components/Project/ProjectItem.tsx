@@ -4,6 +4,12 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
+const phoneNumbers = {
+  Bangalore: "tel:+919606400297",
+  Noida: "tel:+918904435307",
+  Hyderabad: "tel:+91 8951045001",
+};
+
 const ProjectItem = ({
   item,
   setSelectedItem,
@@ -65,7 +71,7 @@ const ProjectItem = ({
         whileInView="visible"
         transition={{ duration: 1, delay: 0.5 }}
         viewport={{ once: true }}
-        className="animate_top rounded-lg bg-white p-4 pb-9 shadow-solid-8 dark:bg-blacksection"
+        className="animate_top rounded-lg bg-white p-4 shadow-solid-8 dark:bg-blacksection"
       >
         <div className="relative overflow-hidden">
           {isNew ? (
@@ -79,7 +85,7 @@ const ProjectItem = ({
                 src={`/images/projects/${city}/${image}`}
                 alt={project}
                 fill
-                className="transition-transform duration-300 transform hover:scale-125"
+                className="transform transition-transform duration-300 hover:scale-125"
               />
             ) : (
               <Image
@@ -92,7 +98,7 @@ const ProjectItem = ({
         </div>
 
         <div className="">
-          <h4 className="mb-1 mt-2 text-lg font-medium text-black hover:text-primary dark:text-white dark:hover:text-primary capitalize">
+          <h4 className="mb-1 mt-2 text-lg font-medium capitalize text-black hover:text-primary dark:text-white dark:hover:text-primary">
             <Link href={`/contact`}>{project.toLowerCase()}</Link>
           </h4>
           <div className="text-xs">
@@ -126,6 +132,26 @@ const ProjectItem = ({
                 </div>
               </div>
             ))}
+          </div>
+          <hr className="my-2" />
+          <div className="flex">
+            <Link
+              href="/contact"
+              className="duration-400 mr-2 rounded-full bg-red-200 px-5 py-1 text-sm font-semibold text-red-600 transition-all hover:bg-red-100"
+            >
+              Enquire Now
+            </Link>
+            <Link
+              className="duration-400 mr-2 rounded-full bg-red-200 px-5 py-[3px] font-semibold text-red-600 transition-all hover:bg-red-100"
+              href={phoneNumbers[city]}
+            >
+              <Image
+                src={"/images/icon/call.svg"}
+                height={19}
+                width={19}
+                alt=""
+              />
+            </Link>
           </div>
         </div>
       </motion.div>

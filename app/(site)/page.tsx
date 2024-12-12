@@ -30,11 +30,11 @@ export default function Home() {
       <Feature />
       <About />
       <FunFact />
-      <FAQ />
-      <CTA />
       <Testimonial />
+      <CTA />
       <Blog />
       <Contact />
+      <FAQ />
     </main>
   );
 }

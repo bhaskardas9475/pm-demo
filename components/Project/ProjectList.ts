@@ -184,7 +184,7 @@ const ProjectList: ProjectType[] = [
     project: "Prestige White Meadows",
     location: "Whitefield main road",
     type: "Apartments",
-    units: "398 Units (Apartments & Villas )",
+    units: "398 Units",
     totalLand: "28.5 Acres",
     sizes: "4BHK - 4000sft to 4300sqft price :  6.25Cr",
     image: "Prestige white Meadows.jfif",

@@ -65,7 +65,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <SocialIcon
-                      url="https://www.instagram.com/propertymatrimony2023/"
+                      url="https://www.instagram.com/propertymatrimony_/"
                       target="_blank"
                     />
                   </li>

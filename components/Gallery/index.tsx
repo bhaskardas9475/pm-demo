@@ -1,74 +1,45 @@
 "use client";
 
-export default function Gallery() {
-  const media = [
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.03 PM (1).jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.03 PM.jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.04 PM (1).jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.04 PM.jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.05 PM (1).jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.05 PM (2).jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.05 PM.jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.06 PM (1).jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.06 PM.jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.07 PM (1).jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.07 PM (2).jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.07 PM.jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.08 PM (1).jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.08 PM.jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.09 PM (1).jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.09 PM.jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.10 PM.jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.11 PM (1).jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.11 PM.jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.31 PM.jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.44 PM.jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.45 PM (1).jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.45 PM (2).jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.45 PM.jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.46 PM (1).jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.46 PM.jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.47 PM (1).jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.47 PM (2).jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.47 PM.jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.48 PM (1).jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.48 PM.jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.49 PM (1).jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.49 PM.jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.50 PM (1).jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.50 PM.jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.51 PM (1).jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.51 PM.jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.54 PM (1).jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.54 PM.jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.55 PM (1).jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.55 PM (2).jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.55 PM.jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.56 PM (1).jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.56 PM.jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.57 PM (1).jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.57 PM.jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.58 PM (1).jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.58 PM (2).jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.58 PM.jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.59 PM (1).jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 3.59.59 PM.jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 4.20.35 PM.jpeg" },
-    { src: "/images/gallery/WhatsApp Image 2024-12-06 at 4.26.10 PM.jpeg" },
-  ];
+import { useState } from "react";
+import { GalleryData } from "./GalleryData";
+import { motion, AnimatePresence } from "framer-motion";
 
-  const colsPadding = { xs: 4, s: 4, m: 4, l: 8, xl: 8, xxl: 8 };
+export default function Gallery() {
+  const [defaultItem] = GalleryData;
+  const [selected, setSelected] = useState(defaultItem.title);
+  const defaultClass = `mr-2 rounded-full bg-red-200 px-5 py-2.5 text-xl font-semibold leading-4 text-red-600 transition-all duration-700 hover:bg-red-100`;
+  const selectedClass = `mr-2 rounded-full bg-red-500 px-5 py-2.5 text-xl font-semibold leading-4 text-white transition-all duration-700 hover:bg-red-800`;
+  const galleryItem = GalleryData.find((itm) => itm.title === selected);
 
   return (
     <div className="mx-auto mt-10 max-w-c-1235 overflow-hidden px-4 md:px-8 2xl:px-0">
-      <div className="grid grid-cols-12 gap-4">
-        {media.map((item) => (
-            <div
-              style={{ backgroundImage: `url('${item.src}')` }}
-              className="m-auto h-[400px] w-[100%] border bg-contain bg-center bg-no-repeat col-span-12 bg-slate-200 md:col-span-4 rounded"
-            ></div>
-        ))}
-      </div>
+      {GalleryData.map((item) => (
+        <button
+          className={item.title === selected ? selectedClass : defaultClass}
+          onClick={() => setSelected(item.title)}
+        >
+          {item.title}
+        </button>
+      ))}
+      <AnimatePresence>
+        <div className="mt-10 grid grid-cols-12 gap-4">
+          {galleryItem?.items.map((item) => (
+            <motion.div
+              key={`card-${item}`} // Ensures key changes on shuffle
+              initial={{ opacity: 0, scale: 0.8, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.8, y: -20 }}
+              transition={{ duration: 0.3 }}
+              className="col-span-12 md:col-span-4 "
+            >
+              <div
+                style={{ backgroundImage: `url('${galleryItem.path}${item}')` }}
+                className="m-auto h-[400px] w-[100%] rounded border bg-slate-200 bg-contain bg-center bg-no-repeat "
+              ></div>
+            </motion.div>
+          ))}
+        </div>
+      </AnimatePresence>
     </div>
   );
 }

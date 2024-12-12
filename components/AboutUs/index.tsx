@@ -64,7 +64,7 @@ const AboutUs = () => {
               viewport={{ once: true }}
               className="animate_right relative mx-auto hidden aspect-[588/526.5] md:block md:w-1/2"
             >
-              <Image src="/images/features/feature-9.jpg" alt="About" fill className="rounded-lg border-[10px] border-double border-red-400" />
+              <Image src="/images/features/feature-9.jpg" alt="About" fill className="rounded-lg shadow-sm" />
             </motion.div>
           </div>
         </div>
