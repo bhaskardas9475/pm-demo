@@ -16,10 +16,9 @@ const Contact = () => {
       phone: HTMLInputElement;
       message: HTMLInputElement;
     };
-  
 
     console.log(elements);
-    const link = `https://docs.google.com/forms/d/e/1FAIpQLSdAE5QSSeOO4_Bq4LWbREZvmEsF6PMiPKWK-Ih-y5ZDCQB_aA/viewform?usp=pp_url&entry.2005620554=${elements.full_name.value}&entry.1045781291=${elements.email.value}&entry.1065046570=Bangalore&entry.1166974658=${elements.phone.value}&entry.839337160=${elements.message.value} `
+    const link = `https://docs.google.com/forms/d/e/1FAIpQLSdAE5QSSeOO4_Bq4LWbREZvmEsF6PMiPKWK-Ih-y5ZDCQB_aA/viewform?usp=pp_url&entry.2005620554=${elements.full_name.value}&entry.1045781291=${elements.email.value}&entry.1065046570=Bangalore&entry.1166974658=${elements.phone.value}&entry.839337160=${elements.message.value} `;
     window.open(link, "_blank");
   };
 
@@ -89,7 +88,8 @@ const Contact = () => {
                 <div className="mb-11.5 flex">
                   <input
                     required
-                    pattern="\d{10}" title="Enter a 10-digit phone number"
+                    pattern="\d{10}"
+                    title="Enter a 10-digit phone number"
                     type="text"
                     name="phone"
                     placeholder="Phone number"
@@ -130,6 +130,26 @@ const Contact = () => {
                   </button>
                 </div>
               </form>
+            </motion.div>
+            <motion.div
+              variants={{
+                hidden: {
+                  opacity: 0,
+                  y: -20,
+                },
+
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                },
+              }}
+              initial="hidden"
+              whileInView="visible"
+              transition={{ duration: 1, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="animate_top oveerflow-hidden rounded-lg relative w-full rounded-lg bg-white p-7.5 shadow-solid-8 dark:border dark:border-strokedark dark:bg-black md:w-3/5 lg:w-3/4 xl:p-15"
+            >
+              <Image src='/images/features/image20.png' alt="Img" fill />
             </motion.div>
           </div>
         </div>

@@ -32,24 +32,8 @@ const Footer = () => {
                 viewport={{ once: true }}
                 className="animate_top w-1/2 lg:w-1/4"
               >
-                <a href="/" className="relative">
-                  <Image
-                    width={110}
-                    height={80}
-                    src="/images/logo/app-logo.png"
-                    alt="Logo"
-                    className="dark:hidden"
-                  />
-                  <Image
-                    width={110}
-                    height={80}
-                    src="/images/logo/logo-dark.svg"
-                    alt="Logo"
-                    className="hidden dark:block"
-                  />
-                </a>
-
-                <p className="mb-10 mt-5">Premier real estate platform</p>
+                <h1 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">Property Matrimony</h1>
+                <p className="mb-10 mt-5">Premium Real Estate Platform</p>
                 <ul className="flex items-center gap-5">
                   <li>
                     <SocialIcon
@@ -72,6 +56,12 @@ const Footer = () => {
                   <li>
                     <SocialIcon
                       url="https://www.youtube.com/@PropertyMatrimony"
+                      target="_blank"
+                    />
+                  </li>
+                  <li>
+                    <SocialIcon
+                      url="https://x.com/PropMatrimony"
                       target="_blank"
                     />
                   </li>

@@ -3,15 +3,19 @@
 @tailwind utilities;
 
 /* third-party libraries CSS */
-.bg-primary {
-  background-color: #ef4f23;
-}
-.text-primary {
-  color: #ef4f23;
-}
+
 :root {
   --swiper-theme-color: #ef4f23 !important;
   --yarl__portal_zindex: 99999;
+}
+.bg-primary {
+  background-color: var(--swiper-theme-color);
+}
+.text-primary {
+  color: var(--swiper-theme-color);
+}
+.border-primary {
+  border-color: var(--swiper-theme-color);
 }
 
 .testimonial-01 .swiper-pagination-bullet {
@@ -30,11 +34,18 @@
 }
 
 @keyframes scalePulse {
-  0%, 100% {
+  0% {
     transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(229, 62, 62, 1);
   }
-  50% {
+
+  70% {
     transform: scale(1.05);
+    box-shadow: 0 0 0 20px rgba(229, 62, 62, 0);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }
 

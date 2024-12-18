@@ -31,7 +31,7 @@ const About = () => {
               viewport={{ once: true }}
               className="animate_left relative mx-auto hidden aspect-[588/526.5] md:block md:w-1/2"
             >
-              <Image src="/images/features/feature-9.jpg" alt="About" fill className="rounded-lg shodow-sm" />
+              <Image src="/images/features/image25.jpg" alt="About" fill className="rounded-lg shodow-sm" />
             </motion.div>
             <motion.div
               variants={{

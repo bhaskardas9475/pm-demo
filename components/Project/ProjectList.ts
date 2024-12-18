@@ -225,6 +225,18 @@ const ProjectList: ProjectType[] = [
     home_screen: "no",
   },
   {
+    city: "Bangalore",
+    project: "GODREJ WOODSCAPES ",
+    location: "Budigere Cross, Old Madras Road, Bang on Main 8-Lane Highway",
+    type: "Apartments",
+    units: 2200,
+    totalLand: 28,
+    sizes:
+      "2 BHK Luxe (1192-1282 Sft):<br />Rs. 1.2 Cr Onwards<br />3 BHK + 2T Premium (1430-1432 Sft):<br />Rs. 1.45 Cr Onwards<br />3 BHK + 3T (1700-1748 Sft):<br />Rs. 1.7 Cr Onwards<br />3BHK + 3T Luxe (1824-2027 Sft):<br />Rs. 1.9 Cr onwards<br />3BHK + Maid's Room (2359-2435 Sft):<br />Rs. 2.45 Cr onwards<br />4BHK + Maid's Room (2900-3600 Sft):<br />Rs. 2.95 Cr onwards",
+    image: "godrej-woodscape-apartments.webp",
+    home_screen: "yes",
+  },
+  {
     city: "Hyderabad",
     project: "The Prestige City",
     location: "Rajendra Nagar",

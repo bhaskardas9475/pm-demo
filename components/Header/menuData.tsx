@@ -1,4 +1,5 @@
 import { Menu } from "@/types/menu";
+import serviceList from "../Features/ServiceList";
 
 const menuData: Menu[] = [
   {
@@ -8,35 +9,11 @@ const menuData: Menu[] = [
     path: "/",
   },
   {
-    id: 2,
-    title: "Services",
-    newTab: false,
-    path: "/#features",
-  },
-  {
     id: 3,
-    title: "About us",
+    title: "About Us",
     newTab: false,
     path: "/about-us",
   },
-  {
-    id: 4,
-    title: "Blogs",
-    newTab: false,
-    path: "/blog",
-  },
-  {
-    id: 5,
-    title: "Gallery",
-    newTab: false,
-    path: "/gallery",
-  },
-  // {
-  //   id: 5,
-  //   title: "Locations",
-  //   newTab: false,
-  //   path: "/#support",
-  // },
   {
     id: 3,
     title: "Projects",
@@ -62,7 +39,30 @@ const menuData: Menu[] = [
       },
     ],
   },
-
+  {
+    id: 2,
+    title: "Services",
+    newTab: false,
+    path: "/#features",
+    submenu: serviceList.map((service, index) => ({
+      id: index + 1,
+      title: service.title,
+      newTab: false,
+      path: `/service/${service.slug}`,
+    })),
+  },
+  {
+    id: 5,
+    title: "Gallery",
+    newTab: false,
+    path: "/gallery",
+  },
+  {
+    id: 4,
+    title: "Blogs",
+    newTab: false,
+    path: "/blog",
+  },
   {
     id: 4,
     title: "Contact Us",

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 const RolesAndResponsibilitiesPage = () => {
   return (
     <div className="pb-16 pt-32.5 md:pb-20 md:pt-28 lg:pb-24 lg:pt-32">
-      <PageHeader title="Role &amp; Responsibilities" />
+      <PageHeader title="Roles &amp; Responsibilities" />
       <JobRoles />
     </div>
   );

@@ -48,13 +48,22 @@ export default function Career() {
   ];
   return (
     <div>
-      <div className="bg-slate-50 px-10 py-10 md:py-16 lg:py-24 xl:px-0">
-        <h2 className="font-manrope mb-14 text-center text-3xl font-bold leading-10 text-gray-900 lg:text-4xl">
+      <div className="bg-slate-50 px-10 pb-10 xl:px-0">
+        <p className="sm:max-w-md sm:py-6 md:max-w-xl lg:max-w-3xl mx-auto text-xs">
+          <b>Vision :</b> To become the premium real estate partner, recognized for
+          consistent excellence, innovative solutions, and an unwavering
+          dedication to long-term investment growth. <br /> <br />
+          <b>Mission :</b> Deliver professional, transparent, and honest real estate
+          services, empowering clients to make informed decisions and discover
+          their ideal properties.
+        </p>
+        <h2 className="font-manrope mb-2 text-center text-3xl font-bold leading-10 text-gray-900 lg:text-4xl">
           Open positions
         </h2>
+        <div className="text-center mb-10 text-xs text-red-500 ">Join Our Dynamic Team – Where Innovation Meets Impact (below open positions)</div>
 
         <div className="mx-auto max-w-sm rounded-2xl border border-slate-200 bg-white p-6 sm:max-w-md sm:p-12 md:max-w-xl lg:max-w-3xl">
-          <div className="text-center mb-5">
+          <div className="mb-5 text-center">
             <Link
               href="/roles-and-responsibilities"
               role="button"
