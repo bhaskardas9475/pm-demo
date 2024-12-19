@@ -118,7 +118,6 @@ export default function JobRoles() {
       <p>
         <br />
       </p>
-      <p>Job description</p>
       <p>Role &amp; Responsibilities:</p>
       <p>Meeting Customers at Project Sites of Reputed Developers</p>
       <p>

@@ -14,7 +14,7 @@ const AboutUsPage = () => {
   return (
     <>
       <section className="pb-16 pt-32.5 md:pb-20 md:pt-28 lg:pb-24 lg:pt-32">
-        <PageHeader title="About Us" image="/images/hero/image31.png" opacity={0.5} />
+        <PageHeader title="About Us" />
         <div className="container mx-auto md:px-20">
           <AboutUs />
         </div>
