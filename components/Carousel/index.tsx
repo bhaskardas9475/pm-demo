@@ -49,9 +49,9 @@ const ProjectSearch = () => {
 
 export default function Carousel() {
   const heroImages = [
+    "/images/hero/1.jpeg",
     "/images/hero/Service-4.png",
     "/images/hero/Service-3.png",
-    "/images/hero/1.jpeg",
     "/images/hero/Service-2.png",
   ];
 
